@@ -1,0 +1,46 @@
+﻿@model Tarea6.Models.User
+<br />
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="text-info" align="center"> ¡Tarea No. VI!</h3>
+            </div>
+            <div class="card">
+                <div class="card-body" align="justify">
+                    <h5 class="text-info"> Cédula:</h5>
+                    <h6 class="text-second"> @Model.Cedula</h6>
+                    <h5 class="text-info"> Nombre:</h5>
+                    <h6 class="text-second"> @Model.Nombre</h6>
+                    <h5 class="text-info"> Apellido:</h5>
+                    <h6 class="text-second"> @Model.Apellido</h6>
+                    <h5 class="text-info"> Edad:</h5>
+                    <h6 class="text-second"> @Model.Edad</h6>
+                    <h5 class="text-info"> Teléfono:</h5>
+                    <h6 class="text-ssecond"> @Model.Telefono</h6>
+                    <h5 class="text-info"> Correo Electronico:</h5>
+                    <h6 class="text-second"> @Model.Correo</h6>
+                    <h5 class="text-info"> Género:</h5>
+                    <h6 class="text-second"> @Model.Genero</h6>
+                    <h5 class="text-info"> Estado Civil:</h5>
+                    <h6 class="text-second"> @Model.EstadoCivil</h6>
+                    <h5 class="text-info"> Hobbys:</h5>
+                    <h6 class="text-second">
+                        @for (var x = 0; x < Model.Hobbys.Length; x++)
+                        {
+                            if (@Model.Hobbys[x] != "false")
+                            {
+                                @Model.Hobbys[x]
+                                <br />
+                            }
+                        }
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

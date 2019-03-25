@@ -1,0 +1,26 @@
+Programacion 3 
+Realizar una aplicación MVC simple consistente en una vista de Bienvenida, desde la cual podamos ir a un formulario con los siguientes campos:
+
+Cédula (obligatorio)
+
+Nombre (obligatorio)
+
+Apellido (obligatorio)
+
+Edad (validar que sea mayor que 15)
+
+Teléfono
+
+Correo electrónico (Validar el formato de un correo electrónico)
+
+Género (Masculino/Femenino) (DropDownList)
+
+Estado civil (Casado/Soltero/Viudo/Union Libre) (RadioButton)
+
+Hobbys (Checkbox, incluir 4 pasatiempos)
+
+Escribir todo el código del formulario usando Html Helpers.
+Aplicar validación en el modelo, usando Data Annotations
+No se requiere persistencia de datos. Los datos digitados deben ser mostrados en otra vista o en la misma del formulario.
+
+Comprimir la solución y subirla por esta vía.
